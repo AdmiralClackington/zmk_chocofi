@@ -99,7 +99,7 @@
 &kp N0  &kp Q    &kp W  &kp E     &kp R  &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P             &kp N0
 &kp N0  &kp A    &kp S  &kp D     &kp F  &kp G       &kp H      &kp J  &kp K      &kp L    &kp SINGLE_QUOTE  &kp N0
 &kp N0  &sp 4 Z  &kp X  &kp C     &kp V  &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &mt RCTRL DEL     &kp N0
-                        &kp LC(LS(LA(LGUI)))  &mo 1  &kp BSPC    &kp SPACE  &mo 2  &kp RALT
+                        &kp LC(LS(LA(LGUI)))  &mo 1  &kp BSPC    &kp SPACE  &mo 2  &kp LC(LS(LA(LGUI))) 
             >;
         };
 
@@ -114,7 +114,7 @@
 &none  &kp N1   &kp N2     &kp N3         &kp N4     &kp N5       &kp N6        &kp N7     &kp N8            &kp N9             &kp N0     &none
 &none  &kp TAB  &kp LC(C)  &kp DQT        &kp PIPE2  &kp HASH     &kp PLUS      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &none
 &none  &kp ESC  &kp TILDE  &kp BACKSLASH  &kp HASH   &kp TILDE    &kp KP_MINUS  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL    &none
-                           &kp LC(LS(LA(LGUI)))      &mo 1      &kp SPACE    &kp RET       &trans     &kp RALT
+                           &kp LC(LS(LA(LGUI)))      &mo 1      &kp SPACE    &kp RET       &trans     &kp LC(LS(LA(LGUI)))
             >;
         };
 
@@ -129,24 +129,24 @@
 &none  &kp EXCL  &kp AT        &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR       &none
 &none  &kp HASH  &kp QUESTION  &kp SLASH         &kp COLON          &kp SEMI     &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BACKSPACE  &none
 &none  &trans    &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH     &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE       &none
-                               &kp LC(LS(LA(LGUI)))         &mo 3              &kp SPACE    &kp RET    &mo 2      &kp RALT
+                               &kp LC(LS(LA(LGUI)))         &mo 3              &kp SPACE    &kp RET    &mo 2      &kp LC(LS(LA(LGUI)))
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &trans  &trans  &out OUT_USB  &out OUT_USB  &trans
-&trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans        &trans        &trans
-                                    &trans        &trans  &trans    &trans  &trans  &trans
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &out OUT_TOG  &none
+&none  &trans        &trans        &trans        &trans  &trans                &trans  &trans  &trans  &trans  &trans        &none
+&none  &trans        &trans        &trans        &trans  &trans                &trans  &trans  &trans  &trans  &bt BT_CLR    &none
+                                    &trans        &trans  &trans                &trans  &trans  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)             &trans
-&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)    &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SINGLE_QUOTE)  &trans
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(N)  &kp LS(M)  &trans     &trans     &trans                &trans
+&none  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)             &none
+&none  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)    &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SINGLE_QUOTE)  &none
+&none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(N)  &kp LS(M)  &trans     &trans     &trans                &none
                               &trans     &trans     &trans       &trans     &trans     &trans
             >;
         };
